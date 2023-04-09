@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <groups>
+        <run>
+            <!--<include name="critical"></include>-->
+            <exclude name="critical"></exclude>
+        </run>
+
+
+    </groups>
+    <test name="test1">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://www.google.com/"></parameter>
+
+        <classes>
+
+            <class name ="org.example.ParametersExample"></class>
+        </classes>
+    </test>
+
+
+    <test name="test2">
+    <parameter name="browser" value="firefox"></parameter>
+    <parameter name="url" value="https://www.google.com/"></parameter>
+
+        <classes>
+
+            <class name ="org.example.ParametersExample"></class>
+        </classes>
+    </test>
+</suite>
